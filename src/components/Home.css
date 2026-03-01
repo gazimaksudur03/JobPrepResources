@@ -66,3 +66,31 @@
 .home-card a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .home {
+    padding: 2rem 1rem;
+  }
+
+  .home-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .home-hero h1 {
+    font-size: 1.35rem;
+  }
+
+  .home-hero p {
+    font-size: 0.95rem;
+  }
+}
