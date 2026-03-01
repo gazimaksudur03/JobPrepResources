@@ -56,13 +56,19 @@
   color: #b0b0cc;
   text-decoration: none;
   font-size: 0.875rem;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
   border-left: 3px solid transparent;
 }
 
 .sidebar-link:hover {
   background: #22224a;
   color: #ffffff;
+  padding-left: 2.25rem;
+}
+
+.sidebar-link:focus-visible {
+  outline: 2px solid #6c9bff;
+  outline-offset: -2px;
 }
 
 .sidebar-link.active {
@@ -74,9 +80,12 @@
 
 @media (max-width: 768px) {
   .sidebar {
+    top: 52px;
     transform: translateX(-100%);
     z-index: 1000;
-    transition: transform 0.25s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: calc(100vh - 52px);
+    bottom: 0;
   }
 
   .sidebar--open {
