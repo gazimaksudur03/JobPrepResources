@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 import docsConfig from "../docsConfig";
 import "./Sidebar.css";
 
-export default function Sidebar() {
+export default function Sidebar({ open, onNavigate }) {
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar${open ? " sidebar--open" : ""}`}>
       <div className="sidebar-header">
-        <NavLink to="/" className="sidebar-brand">
+        <NavLink to="/" className="sidebar-brand" onClick={onNavigate}>
           📚 Job Prep Resources
         </NavLink>
       </div>
@@ -22,6 +22,7 @@ export default function Sidebar() {
                     className={({ isActive }) =>
                       `sidebar-link${isActive ? " active" : ""}`
                     }
+                    onClick={onNavigate}
                   >
                     {page.title}
                   </NavLink>
