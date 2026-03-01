@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import MarkdownViewer from "./components/MarkdownViewer";
@@ -18,13 +19,7 @@ function App() {
 
   return (
     <div className="app-layout">
-      <button
-        className="sidebar-toggle"
-        onClick={toggleSidebar}
-        aria-label="Toggle navigation"
-      >
-        {sidebarOpen ? "✕" : "☰"}
-      </button>
+      <Navbar sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
       {sidebarOpen && (
         <div className="sidebar-overlay" onClick={closeSidebar} />
       )}
