@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
+import { useTheme } from "../context/useTheme";
 import docsConfig from "../docsConfig";
 import rolesConfig from "../rolesConfig";
 import "./Sidebar.css";
 
 export default function Sidebar({ open, onNavigate }) {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <aside className={`sidebar${open ? " sidebar--open" : ""}`}>
       <div className="sidebar-header">
@@ -56,6 +59,18 @@ export default function Sidebar({ open, onNavigate }) {
           </div>
         ))}
       </nav>
+      <div className="sidebar-footer">
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+        >
+          <span className="theme-toggle-icon">
+            {theme === "dark" ? "☀️" : "🌙"}
+          </span>
+          {theme === "dark" ? "Light Mode" : "Dark Mode"}
+        </button>
+      </div>
     </aside>
   );
 }

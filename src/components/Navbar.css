@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     height: 52px;
-    background: #1a1a2e;
+    background: var(--sidebar-bg);
     color: #ffffff;
     z-index: 1100;
     padding: 0 1rem;
@@ -47,7 +47,7 @@
   }
 
   .navbar-toggle:focus-visible {
-    outline: 2px solid #6c9bff;
+    outline: 2px solid var(--color-accent);
     outline-offset: 2px;
   }
 
@@ -81,5 +81,30 @@
 
   .hamburger--open .hamburger-line:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Mobile theme toggle */
+  .navbar-theme-toggle {
+    margin-left: auto;
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 1.15rem;
+    line-height: 1;
+    transition: background 0.2s ease;
+  }
+
+  .navbar-theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-theme-toggle:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
   }
 }

@@ -9,12 +9,75 @@
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #24292f;
-  background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Light theme (default) */
+  --color-bg: #ffffff;
+  --color-text: #24292f;
+  --color-text-secondary: #555;
+  --color-heading: #1a1a2e;
+  --color-link: #4a6fa5;
+  --color-accent: #6c9bff;
+  --color-border: #e0e0e0;
+  --color-border-strong: #d8dee4;
+  --color-card-bg: #ffffff;
+  --color-card-gradient: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+  --color-code-bg: #eff1f3;
+  --color-pre-bg: #f6f8fa;
+  --color-table-header-bg: #f6f8fa;
+  --color-table-alt-row: #f9fafb;
+  --color-loading: #666;
+  --color-error: #cf222e;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+  --color-card-shadow: rgba(0, 0, 0, 0.1);
+  --color-accent-shadow: rgba(108, 155, 255, 0.15);
+
+  /* Sidebar (shared between themes) */
+  --sidebar-bg: #1a1a2e;
+  --sidebar-text: #e0e0e0;
+  --sidebar-border: #2a2a4a;
+  --sidebar-brand: #ffffff;
+  --sidebar-section-title: #8888aa;
+  --sidebar-link: #b0b0cc;
+  --sidebar-link-hover-bg: #22224a;
+  --sidebar-link-active-bg: #22224a;
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+[data-theme="dark"] {
+  --color-bg: #0d1117;
+  --color-text: #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-heading: #e6edf3;
+  --color-link: #79b8ff;
+  --color-accent: #6c9bff;
+  --color-border: #30363d;
+  --color-border-strong: #30363d;
+  --color-card-bg: #161b22;
+  --color-card-gradient: linear-gradient(135deg, #161b22 0%, #1c2128 100%);
+  --color-code-bg: #1c2128;
+  --color-pre-bg: #161b22;
+  --color-table-header-bg: #161b22;
+  --color-table-alt-row: #1c2128;
+  --color-loading: #8b949e;
+  --color-error: #f85149;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-card-shadow: rgba(0, 0, 0, 0.3);
+  --color-accent-shadow: rgba(108, 155, 255, 0.2);
+
+  --sidebar-bg: #010409;
+  --sidebar-text: #c9d1d9;
+  --sidebar-border: #21262d;
+  --sidebar-brand: #f0f6fc;
+  --sidebar-section-title: #6e7681;
+  --sidebar-link: #8b949e;
+  --sidebar-link-hover-bg: #161b22;
+  --sidebar-link-active-bg: #161b22;
 }
 
 html {
