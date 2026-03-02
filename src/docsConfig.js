@@ -9,7 +9,9 @@ const docsConfig = [
   {
     category: "OOP",
     pages: [
-      { title: "OOP Principles", path: "OOP/principles" },
+      { title: "OOP Core Principles in Python", path: "OOP/principles" },
+      { title: "OOP Core Principles in java", path: "OOP/CoreConcepts" },
+      { title: "OOP Core Principles Part 2", path: "OOP/CoreConceptsPart2" },
       { title: "Design Patterns", path: "OOP/design_patterns" },
     ],
   },
