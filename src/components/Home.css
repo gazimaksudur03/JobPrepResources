@@ -5,7 +5,7 @@
 }
 
 .home-hero {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .home-hero h1 {
@@ -20,6 +20,74 @@
   font-size: 1.05rem;
   line-height: 1.6;
   margin: 0;
+}
+
+.home-section {
+  margin-bottom: 2.5rem;
+}
+
+.home-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 1rem;
+}
+
+.home-section-icon {
+  font-size: 1.2rem;
+}
+
+.home-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.home-role-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: #24292f;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-role-card:hover {
+  border-color: #6c9bff;
+  box-shadow: 0 4px 20px rgba(108, 155, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.home-role-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-role-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 0.4rem;
+}
+
+.home-role-card p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 0.75rem;
+  flex: 1;
+}
+
+.home-role-cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6c9bff;
 }
 
 .home-grid {
@@ -79,7 +147,8 @@
     font-size: 1.6rem;
   }
 
-  .home-grid {
+  .home-grid,
+  .home-roles-grid {
     grid-template-columns: 1fr;
   }
 }

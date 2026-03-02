@@ -78,6 +78,32 @@
   font-weight: 500;
 }
 
+.sidebar-group-label {
+  padding: 0.6rem 1.5rem 0.25rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6c9bff;
+  font-weight: 700;
+}
+
+.sidebar-role-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-role-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: #2a2a4a;
+  margin: 0.5rem 1.5rem;
+}
+
 @media (max-width: 768px) {
   .sidebar {
     top: 52px;
