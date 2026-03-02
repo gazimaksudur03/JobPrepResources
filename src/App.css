@@ -6,7 +6,7 @@
 .app-main {
   flex: 1;
   margin-left: 260px;
-  background: #ffffff;
+  background: var(--color-bg);
   min-height: 100vh;
 }
 
@@ -19,7 +19,7 @@
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--color-overlay);
     z-index: 999;
     animation: fadeIn 0.2s ease;
   }

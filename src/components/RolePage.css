@@ -20,12 +20,12 @@
 .role-header h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--color-heading);
   margin: 0 0 0.5rem;
 }
 
 .role-description {
-  color: #555;
+  color: var(--color-text-secondary);
   font-size: 1.05rem;
   line-height: 1.6;
   margin: 0;
@@ -34,12 +34,12 @@
 .role-topics h2 {
   font-size: 1.35rem;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--color-heading);
   margin: 0 0 0.5rem;
 }
 
 .role-topics-intro {
-  color: #555;
+  color: var(--color-text-secondary);
   margin: 0 0 1.25rem;
   font-size: 0.95rem;
 }
@@ -55,17 +55,17 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.85rem 1.25rem;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   text-decoration: none;
-  color: #24292f;
+  color: var(--color-text);
   transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .role-topic-card:hover {
-  border-color: #6c9bff;
-  box-shadow: 0 2px 12px rgba(108, 155, 255, 0.15);
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 12px var(--color-accent-shadow);
   transform: translateY(-1px);
 }
 
@@ -75,7 +75,7 @@
 }
 
 .role-topic-arrow {
-  color: #6c9bff;
+  color: var(--color-accent);
   font-size: 1.1rem;
   flex-shrink: 0;
   margin-left: 0.75rem;

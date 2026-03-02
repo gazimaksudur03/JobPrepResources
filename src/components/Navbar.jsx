@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useTheme } from "../context/useTheme";
 import "./Navbar.css";
 
 export default function Navbar({ sidebarOpen, onToggleSidebar }) {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="navbar">
       <button
@@ -19,6 +22,13 @@ export default function Navbar({ sidebarOpen, onToggleSidebar }) {
       <NavLink to="/" className="navbar-brand">
         📚 Job Prep Resources
       </NavLink>
+      <button
+        className="navbar-theme-toggle"
+        onClick={toggleTheme}
+        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+      >
+        {theme === "dark" ? "☀️" : "🌙"}
+      </button>
     </header>
   );
 }
