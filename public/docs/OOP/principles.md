@@ -347,5 +347,3 @@ MRO is the order Python uses to search for a method in a class hierarchy, comput
 *"OOP is not just a set of language features — it's a way of modeling the real world in code."*
 
 ---
-
-You can copy this directly into any `.md` file or editor. Let me know if you'd like this in a different language (Java, TypeScript, etc.) or want additional topics like SOLID principles or design patterns expanded.
