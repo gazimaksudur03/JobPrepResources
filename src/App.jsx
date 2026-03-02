@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import MarkdownViewer from "./components/MarkdownViewer";
+import RolePage from "./components/RolePage";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <main className="app-main">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/roles/:roleId" element={<RolePage />} />
           <Route path="/docs/*" element={<MarkdownViewer />} />
         </Routes>
       </main>
