@@ -416,7 +416,7 @@ All non-`static`, non-`final`, non-`private` methods in Java are virtual by defa
 
 **Q5: Explain the Diamond Problem and how Java solves it.**
 
-```
+```text
         A
        / \
       B   C

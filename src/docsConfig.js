@@ -10,8 +10,8 @@ const docsConfig = [
     category: "OOP",
     pages: [
       { title: "OOP Core Principles in Python", path: "OOP/principles" },
-      { title: "OOP Core Principles in java", path: "OOP/CoreConcepts" },
-      { title: "OOP Core Principles Part 2", path: "OOP/CoreConceptsPart2" },
+      { title: "OOP Core Concepts in Java", path: "OOP/CoreConcepts" },
+      { title: "Interfaces, Abstract Classes & Access Modifiers", path: "OOP/CoreConceptsPart2" },
       { title: "Design Patterns", path: "OOP/design_patterns" },
     ],
   },
@@ -19,6 +19,7 @@ const docsConfig = [
     category: "Data Structures",
     pages: [
       { title: "Arrays & Strings", path: "DataStructures/arrays_and_strings" },
+      { title: "C++ Arrays & Vectors", path: "DataStructures/arrays_and_vectors_cpp" },
       { title: "Linked Lists", path: "DataStructures/linked_lists" },
       { title: "Trees & Graphs", path: "DataStructures/trees_and_graphs" },
     ],
