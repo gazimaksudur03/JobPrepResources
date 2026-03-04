@@ -244,7 +244,7 @@ a.speak();              // → "Woof" — resolved at runtime
 
 **Q5: Explain the Diamond Problem.**
 
-```
+```text
       A
      / \
     B   C
