@@ -7,6 +7,12 @@ const docsConfig = [
     ],
   },
   {
+    category: "AWS",
+    pages: [
+      { title: "AWS Certification Types", path: "AWS/certificationTypes" },
+    ],
+  },
+  {
     category: "OOP",
     pages: [
       { title: "OOP Core Principles in Python", path: "OOP/principles" },
