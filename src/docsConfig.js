@@ -1,5 +1,11 @@
 const docsConfig = [
   {
+    category: "Coding Test Preparation",
+    pages: [
+      { title: "Coding Round Roadmap", path: "CodingTestPreparation/coding_test_preparation" },
+    ],
+  },
+  {
     category: "SQL",
     pages: [
       { title: "MySQL Functions", path: "SQL/functions" },
