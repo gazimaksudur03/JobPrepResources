@@ -30,6 +30,12 @@ const docsConfig = [
       { title: "Trees & Graphs", path: "DataStructures/trees_and_graphs" },
     ],
   },
+  {
+    category: "Coding Test Preparation",
+    pages: [
+      { title: "Basic Stage Guide", path: "CodingTest/preparation_basic" },
+    ],
+  },
 ];
 
 export default docsConfig;
